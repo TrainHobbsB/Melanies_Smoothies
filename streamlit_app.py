@@ -1,6 +1,6 @@
 # Import python packages
 import streamlit as st
-cnx=st.connection("snowflake")
+cnx = st.connection('snowflake')
 from snowflake.snowpark.functions import col
 
 
