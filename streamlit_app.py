@@ -1,5 +1,6 @@
 # Import python packages
 import streamlit as st
+cnx=st.connection("snowflake")
 from snowflake.snowpark.functions import col
 
 
@@ -11,7 +12,7 @@ st.write(
   """
 )
 
-cnx=st.connection("snowflake")
+
 
 
 name_on_order = st.text_input('Name on Smoothie:')
